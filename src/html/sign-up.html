@@ -7,7 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
-  <link rel="stylesheet" href="../css/sign up.min.css">
+  <link rel="stylesheet" href="../css/sign-up.min.css">
+  <script src="../js/sign-up.js"></script>
+  <script class="tiaozhuan"></script>
 </head>
 
 <body>
@@ -19,16 +21,18 @@
     <p>为了您正常享用三星会员提供的服务，请输入准确的身份证信息</p>
     <fieldset class="fieldest">
       <div class="main-input">
-        <label for="familyName" class="lable">姓氏</label>
-        <input type="text">
+        <label for="username" class="lable">姓名</label>
+        <input type="text" id="name">
+        <div class="error"></div>
       </div>
       <div class="main-input">
-        <label for="name" class="lable">名字</label>
-        <input type="text">
+        <label for="password" class="lable">密码</label>
+        <input type="password" id="password">
       </div>
       <div class="main-input">
-        <label for="IDcard" class="lable">身份证验证</label>
-        <input type="text">
+        <label for="card" class="lable">身份证号</label>
+        <input type="text" id="card">
+        <div class="regexp"></div>
       </div>
     </fieldset>
     <div class="sign-up">
@@ -37,6 +41,7 @@
     <div>
       <p><a href="#">其他注册方式</a></p>
       <p><a href="#">军人证/护照验证</a></p>
+      <p><a href="./login.html" style="color:#0000EE;font-weight:bold;display: block;float: right;">已有账号去登陆</a></p>
     </div>
   </section>
 

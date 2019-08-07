@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.wrapper {
+  padding-top: 90px;
+}
+
+.wrapper .main {
+  position: relative;
+  width: 600px;
+  padding: 60px;
+  margin: auto;
+  background-color: #fff;
+}
+
+.wrapper .main fieldset {
+  border: none;
+}
+
+.wrapper .main .remember {
+  margin-top: 15px;
+}
+
+.wrapper .main #v_container {
+  margin-top: 20px;
+  width: 150px;
+  height: 50px;
+}
+
+.wrapper .main #code_input {
+  height: 2.7em;
+  width: 200px;
+  margin-top: 15px;
+  border: none;
+  border: 1px solid #DDD;
+  font-size: 1.2em;
+}
+
+.wrapper .main #my_button {
+  background-color: #1428A0;
+}
+
+.wrapper .main-input {
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin: 1.215em 0 0 0;
+}
+
+.wrapper .main-input input {
+  display: block;
+  width: 100%;
+  color: #000;
+  border: none;
+  border-bottom: 1px solid #DDD;
+  background-color: transparent;
+  box-sizing: border-box;
+  height: 2.7em;
+  line-height: 1.2;
+  font-size: 1.142em;
+}
+
+.wrapper .login {
+  width: 100%;
+  margin: 3.75em 0 2.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wrapper .login .submit {
+  min-width: 270px;
+  max-width: 270px;
+  margin: 0;
+  background-color: #1428A0;
+  border: 2px solid #000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.2;
+  letter-spacing: .01em;
+  word-break: break-all;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle;
+  min-height: 3.125em;
+  padding: .5em 1.5em;
+  border-radius: .5em;
+}
+
+.wrapper p {
+  text-align: center;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/login.min.css">
+  <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../js/login.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="main">
+      <h2>三星账户</h2>
+      <fieldset>
+        <div class="main-input">
+          <label for="loginID">用户名</label>
+          <input type="text" id="name">
+        </div>
+        <div class="main-input">
+          <label for="password">密码</label>
+          <input type="password" id="password">
+        </div>
+        <div class="remember">
+          <input type="checkbox" name="" id="remember">
+          <span>记住我的ID</span>
+        </div>
+        <div id="v_container"></div>
+        <input type="text" id="code_input" value="" placeholder="请输入验证码" /> <!-- <button id="my_button">验证</button>-->
+      </fieldset>
+      <div class="login">
+        <button class="submit" id="my_button" disabled="disabled">登录</button>
+      </div>
+      <p><a href="./sign-up.html">没有账号点此注册</a></p>
+      <p><a href="./samsung.html">跳过返回首页</a></p>
+    </div>
+  </div>
+</body>
+<script src="../js/gVerify.js"></script>
+<script>
+  var verifyCode = new GVerify("v_container");
+  // console.log(verifyCode)
+  document.getElementById("code_input").onchange = function () {
+    var res = verifyCode.validate(document.getElementById("code_input").value);
+    if (res) {
+      alert("验证正确");
+      $('#my_button').removeAttr('disabled');
+    } else {
+      alert("验证码错误");
+    }
+  }
+</script>
+
+</html>
